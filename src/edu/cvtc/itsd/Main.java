@@ -53,10 +53,12 @@ public class Main {
     public void replace(FilterBypass fb, int offset, int lengthToDelete, String stringToAdd, AttributeSet attr)
         throws BadLocationException
     {
-      if (fb.getDocument() != null) {
+      if (fb.getDocument() != null && stringToAdd.matches("\\d")) {
         super.replace(fb, offset, lengthToDelete, stringToAdd, attr);
       }
       else {
+        stringToAdd = "";
+        super.replace(fb, offset, lengthToDelete, stringToAdd, attr);
         Toolkit.getDefaultToolkit().beep();
       }
     }
