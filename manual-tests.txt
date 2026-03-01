@@ -72,4 +72,13 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 * The field should ignore non-numerical input.
 
 
+# Module 5: Consistency and standards
+
+1. Build and run CiCo.
+2. Close the window.
+
+## Expected results
+* The application closes when the window is closed.
+
+
 
